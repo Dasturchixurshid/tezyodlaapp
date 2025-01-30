@@ -1,0 +1,24 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Termux muhitini yangilash
+pkg update && pkg upgrade -y
+
+# Zaruriy paketlarni o'rnatish
+pkg install python clang git unzip build-essential -y
+
+# Buildozer yoki Python-for-Android o'rnatish
+pip install --upgrade pip
+pip install buildozer cython
+
+# Loyihaning joylashuvi
+/sdcard/dictionaryapp/TezYodla.apk # Bu yerda loyihangiz joylashgan manzilni kiriting
+
+# Virtual muhitni yaratish (agar kerak bo'lsa)
+python3 -m venv venv
+source venv/bin/activate
+
+# Buildozer'ni ishga tushirish
+buildozer android debug
+
+# Natija
+echo "APK fayli yaratildi!"
