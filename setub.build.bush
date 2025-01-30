@@ -11,7 +11,7 @@ pip install --upgrade pip
 pip install buildozer cython
 
 # Loyihaning joylashuvi
-/sdcard/dictionaryapp/TezYodla.apk # Bu yerda loyihangiz joylashgan manzilni kiriting
+https://github.com/Dasturchixurshid/tezyodlaapp/blob/main/dictionary.py # Bu yerda loyihangiz joylashgan manzilni kiriting
 
 # Virtual muhitni yaratish (agar kerak bo'lsa)
 python3 -m venv venv
